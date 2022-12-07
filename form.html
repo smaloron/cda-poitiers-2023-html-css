@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+    <style>
+        .myForm {
+            display: grid;
+            grid-template-columns: auto 1fr 2fr;
+            gap: .8em;
+            padding: 1.2em;
+        }
+
+        .myForm>label {
+            grid-column-start: 1;
+        }
+
+        .myForm>input {
+            grid-column-start: 2;
+        }
+
+        #comment-box {
+            grid-column-start: 3;
+            grid-row: 1 / span 3
+        }
+
+        #comment-box>label {
+            display: block;
+            margin-bottom: .8em;
+        }
+
+        #comment-box>textarea {
+            width: 100%;
+        }
+
+        .myForm>button {
+            grid-column: 2 / span 2;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="myForm">
+        <label for="">Nom</label>
+        <input type="text" />
+        <label for="">Email</label>
+        <input type="email" name="" id="" />
+        <label for="">téléphone</label>
+        <input type="tel" name="" id="" />
+
+        <div id="comment-box">
+            <label for="">Remarques</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <button>Valider</button>
+    </form>
+</body>
+
+</html>

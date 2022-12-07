@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerie 3</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 5px;
+        }
+
+        .grid>img {
+            width: 100%;
+        }
+
+        .grid>img:nth-of-type(2) {
+            grid-row: span 3;
+            grid-column: span 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <img src="photos/serie-02/photo-01.jpg" alt="" />
+        <img src="photos/serie-02/photo-02.jpg" alt="" />
+        <img src="photos/serie-02/photo-03.jpg" alt="" />
+        <img src="photos/serie-02/photo-04.jpg" alt="" />
+        <img src="photos/serie-02/photo-05.jpg" alt="" />
+        <img src="photos/serie-02/photo-06.jpg" alt="" />
+        <img src="photos/serie-02/photo-07.jpg" alt="" />
+        <img src="photos/serie-02/photo-08.jpg" alt="" />
+        <img src="photos/serie-02/photo-09.jpg" alt="" />
+        <img src="photos/serie-02/photo-10.jpg" alt="" />
+        <img src="photos/serie-02/photo-11.jpg" alt="" />
+        <img src="photos/serie-02/photo-12.jpg" alt="" />
+    </div>
+</body>
+
+</html>
